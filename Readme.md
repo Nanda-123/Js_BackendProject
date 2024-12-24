@@ -10,3 +10,5 @@ git status : to check the status
 git add . : It adds the files to git Repo
 git commit - m "some comments" : we can assign the comments for our git puch so that we can track the changes why .
 git push : finally it puches all the changed file to Git
+
+*.prettierignore - it shows in what all the files we should not apply prettier
