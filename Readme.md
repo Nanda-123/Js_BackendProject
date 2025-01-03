@@ -61,3 +61,20 @@ API:
 4.ApiError and ApiResponse: Supporting classes used to handle and format API errors and responses consistently.
 
 *bcrypt : A library to help you hash passwords.
+
+* EXPORT :
+1.Use export default:
+When the module primarily focuses on exporting a single value.
+For simplicity when there's only one export.
+
+2. Use export { router }: router IS NAME OS ROUTER
+When the module has multiple exports.
+To enforce consistent naming and clarity.
+import with same name and curly braces
+
+2.1 Key Features of Named Exports:
+You must use the same name when importing (or use as to alias it).
+Useful when exporting multiple values from the same module.
+
+3. export default router;
+makes the router object the default export of the module. This means you can import it in another file without using curly braces, and you can name the imported value whatever you like.

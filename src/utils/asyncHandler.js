@@ -1,7 +1,7 @@
 //METHOD : 1 : Using promises
 
-const asyncHandle = (requesthandler)=>{
-    (req,res,next)=>{
+const asyncHandler = (requesthandler)=>{
+    return (req,res,next)=>{
         Promise.resolve(requesthandler(req,res,next)).catch((err) => next(err))
         //ThIS implementation (Promise.resolve(...).catch(next)) forwards errors to 
         // the  Express error-handling middleware.next(err)
@@ -41,4 +41,4 @@ const asyncHandle =(func)=> async()=>{}
 //     }
 // }
 
-export {asyncHandle}
+export { asyncHandler } 
