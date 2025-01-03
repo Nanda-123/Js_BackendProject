@@ -5,7 +5,7 @@
 
 import dotenv from "dotenv"; // if we import dotenv then we need to config
 import connectDB from "./db/index.js"
-
+import app from "./app.js"
 
 
 dotenv.config({
@@ -15,7 +15,18 @@ dotenv.config({
 //1st approach 
 
 connectDB();
+//CHECK THE EXPRESS CONNECTION  //IF WE ARE USING EXPRESS THEN BELOW CODE 
 
+try {
+    app.listen(process.env.PORT || 8000, ()=>{
+console.log(`server is Running on PORT : ${process.env,PORT}`);
+
+    })
+    
+} 
+catch (error) {
+    console.log(`MangoDB Connection Failed!!!`);   
+}
 
 // 2nd approch
 

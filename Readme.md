@@ -5,7 +5,7 @@ manually, nodemon automatically restart the server so we can see the latest chan
 
 * npm i -D nodemon : to install Development nodemon 
 
-Git commands:
+Git COMMANDS:
 git status : to check the status 
 git add . : It adds the files to git Repo
 git commit - m "some comments" : we can assign the comments for our git puch so that we can track the changes why .
@@ -47,3 +47,17 @@ Without await, you would need to use .then and .catch
 ** restart Server 
 1. whenever we do some changes for file nodemon automatically restart the server BUT 
 2. when we do any changes in .env file it require manuall restart of server
+
+EXPRESS:
+Express is a web application framework for Node.js.
+It provides a robust set of features for building web and mobile applications.
+Essentially, it simplifies the process of creating server-side applications.
+
+
+API:
+1.Express: This framework itself is a tool for building APIs.
+2.Route Handlers: Functions in Express that process requests (e.g., app.get('/api/...')) are APIs.
+3.AsyncHandler: Utility to simplify error handling in API routes.
+4.ApiError and ApiResponse: Supporting classes used to handle and format API errors and responses consistently.
+
+*bcrypt : A library to help you hash passwords.
